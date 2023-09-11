@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 4%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
+header .navbar .nav-1{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero */
+.hero .card{
+    padding: 2rem 7%;
+    height: 680px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .card1{
+    background-image: url(hero1.jpg);
+}
+
+.hero .card2{
+    background-image: url(hero2.jpg);
+}
+
+.hero .card3{
+    background-image: url(hero3.jpg);
+}
+
+.hero .card h3{
+    font-size: 40px;
+}
+
+.hero .card h1{
+    font-size: 50px;
+}
+
+.hero .card button{
+    padding: 10px 20px;
+    background-color: #F9AA01;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Big Game */
+.bigGame{
+    display: flex;
+    padding: 4rem 4%;
+    justify-content: space-evenly;
+    background-color: #222222;
+}
+
+.bigGame .card{
+    width: 350px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.bigGame .overlay{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 98%;
+    position: absolute;
+}
+
+.bigGame .card img{
+    width: 100%;
+}
+
+.bigGame .card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.bigGame .card .cardText{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.bigGame .cardText h3{
+    font-size: 25px;
+}
+
+/* Category */
+.gameCategory{
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 4%;
+}
+
+.gameCategory .title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.gameCategory .category{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.gameCategory .category ul li{
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.gameCategory .category .choose li:hover{
+    border: 1px solid #F9AA01;
+}
+
+.gameCategory .category .filter li{
+    border: 2px solid #F9AA01;
+    padding: 6px 20px;
+}
+
+.categoryContent{
+    margin-top: 20px;
+    padding: 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.categoryContent .card{
+    width: 350px;
+    border: 1px solid #F9AA01;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.categoryContent .cardImg{
+    border: 1px solid #F9AA01;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.categoryContent .card img{
+    width: 100%;
+}
+
+.categoryContent .card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.categoryContent .cardText h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.categoryContent .ratting i{
+    color: #F9AA01;
+    margin-right: 5px;
+}
+
+.categoryContent .price{
+    display: flex;
+    margin-top: 10px;
+}
+
+.categoryContent .price P:nth-child(2){
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+/* Hot Deals */
+.hotDeals{
+    background-color: #222222;
+    padding: 2rem 4%;
+}
+
+.hotDeals .title{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.hotDeals .hotDealsContent{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hotDeals .card{
+    width: 45%;
+    position: relative;
+    cursor: pointer;
+}
+
+.hotDeals .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    background-color: rgba(249, 170, 1, .7);
+    visibility: hidden;
+}
+
+.hotDeals .card:hover .overlay{
+    visibility: visible;
+    transition: .5s;
+}
+
+.hotDeals .card img{
+    width: 100%;
+}
+
+.hotDealsGame{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hotDealsGame .card{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.hotDealsGame .card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.hotDealsGame .card img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Blog */
+.blog{
+    background-color: #000;
+    color: #fff;
+}
+
+.blog .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blog .blogContent{
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blog .blogContent .card{
+    width: 350px;
+}
+
+.blog .blogContent .card img{
+    width: 100%;
+}
+
+/* Platform */
+.platform{
+    background-color: #000;
+    padding: 4rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.platform .card{
+    width: 230px;
+    position: relative;
+    cursor: pointer;
+}
+
+.platform .card::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 2px;
+    bottom: 5px;
+    background-color: #fff;
+}
+
+.platform .card::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 2px;
+    top: 2px;
+    background-color: #fff;
+}
+
+.platform .card img{
+    width: 100%;
+}
+
+/* Newsletter */
+.newsLatter{
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 5%;
+}
+
+.newsLatter .newsContent{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #F9AA01;
+}
+
+.newsLatter i{
+    font-size: 40px;
+    color: #F9AA01;
+    margin-right: 15px;
+}
+
+.newsLatter .col:nth-child(1){
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.newsLatter .col input{
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 300px;
+}
+
+.newsLatter button{
+    padding: 12px 20px;
+    background-color: #F9AA01;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Support */
+.support{
+    background-color: #000;
+    padding: 3rem 4%;
+}
+
+.support .card{
+    width: 200px;
+}
+
+.support .card img{
+    width: 100%;
+}
+
+footer{
+    background-color: #000;
+    padding: 4rem 5%;
+    color: #fff;
+}
+
+.footerLogo{
+    text-align: center;
+}
+
+footer .footerContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer ul li{
+    margin-bottom: 15px;
+}
+
+footer ul li i{
+    margin-right: 10px;
+}
+
+footer .pay{
+    margin-top: 10px;
+}
+
+footer .pay li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+footer button{
+    background-color: #F9AA01;
+    padding: 10px;
+    border: none;
+    color: #fff;
+}
